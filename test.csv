@@ -1,0 +1,54 @@
+name,x,y,dependency,upper_text,lower_text,status,color,complete_inner_text_color,unlocked_outer_text_color,background_color,locked_color,incomplete_inner_text_color,locked_outer_text_color,level,dependency_color
+Run,770,760,,,,completed,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run1k,830,720,Run,Run 1 km,any time,unlocked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run2k,910,720,run1k,Run 2 km,any time,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run1k|<5:00,790,660,run1k,Run 1 km,in less than 5:00,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run1k|<4:30,710,660,run1k|<5:00,Run 1 km,in less than 4:30,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run1k|<4:15,670,720,run1k|<4:30,Run 1 km,in less than 4:15,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run1k|<4:00,590,720,run1k|<4:15,Run 1 km,in less than 4:00,locked,#cd8032,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run1k|<3:45,630,660,run1k|<4:00,Run 1 km,in less than 3:45,locked,#d7ded9,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run1k|<3:30,550,660,run1k|<3:45,Run 1 km,in less than 3:30,locked,#cfa959,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run2k|<10:00,870,660,run2k,Run 2 km,in less than 10:00,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run2k|<9:00,830,600,run2k|<10:00,Run 2 km,in less than 9:00,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run2k|<8:30,750,600,run2k|<9:00,Run 2 km,in less than 8:30,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run2k|<8:00,670,600,run2k|<8:30,Run 2 km,in less than 8:00,locked,#cd8032,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run2k|<7:30,590,600,run2k|<8:00,Run 2 km,in less than 7:30,locked,#d7ded9,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run2k|<7:00,630,540,run2k|<7:30,Run 2 km,in less than 7:00,locked,#cfa959,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run5k,990,720,run2k,Run 5 km,any time,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run5k|<30:00,950,660,run5k,Run 5 km,in less than 30:00,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run5k|<28:00,910,600,run5k|<30:00,Run 5 km,in less than 28:00,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run5k|<26:00,870,540,run5k|<28:00,Run 5 km,in less than 26:00,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run5k|<24:00,790,540,run5k|<26:00,Run 5 km,in less than 24:00,locked,#cd8032,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run5k|<22:00,710,540,run5k|<24:00,Run 5 km,in less than 22:00,locked,#d7ded9,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run5k|<20:00,670,480,run5k|<22:00,Run 5 km,in less than 20:00,locked,#cfa959,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run10k,1070,720,run5k,Run 10 km,any time,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run10k|1:00:00,1030,660,run10k,Run 10 km,in less than 1h,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run10k|55:00,990,600,run10k|1:00:00,Run 10 km,in less than 55:00,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run10k|50:00,950,540,run10k|55:00,Run 10 km,in less than 50:00,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run10k|47:30,910,480,run10k|50:00,Run 10 km,in less than 47:30,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run10k|45:00,830,480,run10k|47:30,Run 10 km,in less than 45:00,locked,#cd8032,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run10k|42:30,750,480,run10k|45:00,Run 10 km,in less than 42:30,locked,#d7ded9,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run10k|40:00,790,420,run10k|42:30,Run 10 km,in less than 40:00,locked,#cfa959,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run15k,1150,720,run10k,Run 15 km,any time,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run15k|1:30:00,1110,660,run15k,Run 15 km,in less than 1h30,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run15k|1:20:00,1070,600,run15k|1:30:00,Run 15 km,in less than 1h20,locked,#cd8032,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run15k|1:10:00,1030,540,run15k|1:20:00,Run 15 km,in less than 1h10,locked,#d7ded9,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run15k|1:00:00,990,480,run15k|1:10:00,Run 15 km,in less than 1h,locked,#cfa959,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run20k,1230,720,run15k,Run 20 km,any time,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run20k|2:20:00,1190,660,run20k,Run 20 km,in less than 2h20,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run20k|2:10:00,1150,600,run20k|2:20:00,Run 20 km,in less than 2h10,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run20k|2:00:00,1110,540,run20k|2:10:00,Run 20 km,in less than 2h,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run20k|1:50:00,1070,480,run20k|2:00:00,Run 20 km,in less than 1h50,locked,#cd8032,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run20k|1:40:00,1030,420,run20k|1:50:00,Run 20 km,in less than 1h40,locked,#d7ded9,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run20k|1:30:00,950,420,run20k|1:40:00,Run 20 km,in less than 1h30,locked,#cfa959,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run25k,1190,780,run20k,Run 25 km,any time,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run25k|3:00:00,1150,840,run25k,Run 25 km,in less than 3h,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run25k|2:50:00,1070,840,run25k|3:00:00,Run 25 km,in less than 2h50,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run25k|2:40:00,990,840,run25k|2:50:00,Run 25 km,in less than 2h40,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run25k|2:30:00,910,840,run25k|2:40:00,Run 25 km,in less than 2h30,locked,#a82f1b,#ffffff,#ffffff,#07263c,#5a5a5b,#ffffff,#ffffff,0,#9a3929
+run25k|2:20:00,870,780,run25k|2:30:00,Run 25 km,in less than 2h20,locked,#cd8032,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run25k|2:10:00,830,840,run25k|2:20:00,Run 25 km,in less than 2h10,locked,#d7ded9,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run25k|2:00:00,870,900,run25k|2:10:00,Run 25 km,in less than 2h,locked,#cfa959,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run30k,1110,780,run25k,Run 30 km,any time,locked,#cd8032,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run35k,1030,780,run30k,Run 30 km,any time,locked,#d7ded9,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
+run42k,950,780,run35k,Run 30 km,any time,locked,#cfa959,#ffffff,#ffffff,#07263c,#2b2028,#ffffff,#ffffff,0,#9a3929
