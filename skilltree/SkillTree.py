@@ -12,14 +12,30 @@ import csv
 
 class SkillTree:
     def __init__(self, skills_file):
+        self.background_color = '#32324e'
         self.csv_file = skills_file
         self.skills = self.load_skills_from_csv()
         self.dependency_map = {skill['name']: skill['dependency'] for skill in self.skills}
         
-        self.background_color = '#003153'
+        
     
     def load_skills_from_csv(self):
         skills = []
+        color_lookup = {'red': '#a82f1b',
+                        'dark-red': '#9a3929',
+                        'bronze': '#cd8032',
+                        'silver': '#d7ded9',
+                        'gold': '#cfa959',
+                        'normal-grey': '#5a5a5b',
+                        'special-grey': '#2b2028',
+                        'white': '#ffffff',
+                        'purple': '#ab274f',
+                        'blue': '#00b9ff',
+                        'dark-blue': '#19aee6',
+                        'green': '#638c4d',
+                        'dark-green': '#526747',
+                        'background': self.background_color}
+        
         try:
             with open(self.csv_file, newline='') as csvfile:
                 reader = csv.DictReader(csvfile)
@@ -32,15 +48,15 @@ class SkillTree:
                         "upper_text": row['upper_text'],
                         "lower_text": row['lower_text'],
                         "status": row['status'],
-                        "color": row['color'],
-                        "complete_inner_text_color": row['complete_inner_text_color'],
-                        "unlocked_outer_text_color": row['unlocked_outer_text_color'],
-                        "background_color": row['background_color'],
-                        "locked_color": row['locked_color'],
-                        "incomplete_inner_text_color": row['incomplete_inner_text_color'],
-                        "locked_outer_text_color": row['locked_outer_text_color'],
+                        "color": color_lookup.get(row['color'], 'pink'),
+                        "complete_inner_text_color": color_lookup.get(row['complete_inner_text_color'], 'pink'),
+                        "unlocked_outer_text_color": color_lookup.get(row['unlocked_outer_text_color'], 'pink'),
+                        "background_color": color_lookup.get(row['background_color'], 'pink'),
+                        "locked_color": color_lookup.get(row['locked_color'], 'pink'),
+                        "incomplete_inner_text_color": color_lookup.get(row['incomplete_inner_text_color'], 'pink'),
+                        "locked_outer_text_color": color_lookup.get(row['locked_outer_text_color'], 'pink'),
                         "level": int(row['level']),
-                        'dependency_color': row['dependency_color']}
+                        'dependency_color': color_lookup.get(row['dependency_color'], 'pink')}
                     skills.append(skill)
         except FileNotFoundError:
             print("No CSV file found")
@@ -49,7 +65,7 @@ class SkillTree:
 
     def render(self):
         # Create the drawing object
-        size = 2400
+        size = 1600
         drawing = dw.Drawing(size, size, origin='top-left')
         drawing.append(dw.Rectangle(0, 0, size, size, fill=self.background_color))
  

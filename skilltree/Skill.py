@@ -70,6 +70,7 @@ class Skill:
         self.write_center_text()
         self.write_upper_text()
         self.write_lower_text()
+        self.draw_stars()
     
     def draw_base_shape(self):
         # Draw base circle
@@ -182,6 +183,53 @@ class Skill:
             text_color = self.unlocked_outer_text_color
 
         self.write_outer_text('bottom', self.lower_text, text_color)
+    
+    def draw_stars(self):
+        """
+        Draws up to 5 stars above the center text to represent the skill's level.
+        The stars will follow the shape of the donut, located above the text.
+        Bronze stars for levels 1-4, Silver stars for level 5.
+        """
+        star_radius = 3  # Radius of each star
+        star_distance = self.inner_radius * .8 # Trying to get it just inside the donut
+        bronze_color = '#cd7f32'
+        silver_color = '#c0c0c0'
+        gold_color = '#ffd700'
+        
+        level_to_show = min(self.level, 15)
+               
+        # Determine how many stars get drawn and what their colors are
+        if level_to_show < 6:
+            # up to 5 bronze stars
+            num_stars = level_to_show
+            color = bronze_color
+        elif 5 < level_to_show < 11:
+            # up to 5 silver stars
+            num_stars = level_to_show - 5
+            color = silver_color
+        elif 10 < level_to_show <= 15:
+            # up to 5 old stars
+            num_stars = level_to_show - 10
+            color = gold_color
+        else:
+            print('Something happened in calculating number of stars to draw')
+        
+        angle_separation = 25
+        total_angle_span = (num_stars - 1) * angle_separation
+        start_angle = math.radians(270) - math.radians(total_angle_span / 2)
+        
+        for i in range(num_stars):
+                        
+            # Calculate the angle for the current star
+            angle = start_angle + math.radians(i * angle_separation)
+    
+            # Calculate the (x, y) position for each star
+            x = self.pos_x + star_distance * math.cos(angle)
+            y = self.pos_y + star_distance * math.sin(angle)
+            
+            # Draw the star, which is actually just a circle
+            star = dw.Circle(x, y, star_radius, fill=color)
+            self.svg.append(star)
 
 
 # width, height = 400, 400
